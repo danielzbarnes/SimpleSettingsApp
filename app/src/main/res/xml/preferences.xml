@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    android:key="pref_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Generic Settings">
+
+        <SwitchPreferenceCompat
+            app:key="notifications"
+            app:title="notifications on/off" />
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="alias_preference"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Enter Alias" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Additional Settings">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_1"
+            android:title="Preference One" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="check_box_preference_2"
+            android:title="Preference Two" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Turning a Preference into a Button" >
+
+        <Preference
+            android:key="pref_button"
+            android:title="Preference Button"
+            android:summary="click to activate button"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference
+            android:key="clear_pref_button"
+            android:title="Clear Preferences"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
